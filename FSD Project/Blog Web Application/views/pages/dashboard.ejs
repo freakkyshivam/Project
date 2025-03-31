@@ -1,0 +1,52 @@
+
+<%- include('../partials/header.ejs') %>
+<div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Hello Shivam</h2>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/create_post">Create Post</a></li>
+          <li><a href="#">Manage Posts</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>Dashboard</h1>
+      </header>
+
+      <section class="post-list">
+        <h2>Recent Posts</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+
+              <tr>
+                <a href=""><td><strong>How to choose best programming language for your Carrer</strong><br>
+                <label for="date and time">2025-02-23 17:05:33</label></td></a>
+                <td><strong>Shantanu Singh</strong></td>
+                <td>
+                  <button id="edit-btn">Edit</button>
+                  <button id="delete-btn">Delete</button>
+                </td>
+              </tr>
+            
+            <!-- More posts go here -->
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+    
+  <%- include('../partials/footer.ejs') %>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    input{
+        padding: 15px;
+        border: 2px solid greenyellow;
+        border-radius: 5px;
+    }
+
+    .btn{
+        padding: 10px;
+        border-radius: 5px;
+        background-color: greenyellow;
+        border: 2px solid greenyellow;
+        transition: 0.2s ease-in-out;
+    }
+
+    .btn:hover{
+        background-color: blueviolet;
+        border: 2px solid blueviolet;
+    }
+
+    form{
+        margin-top: 50px;
+        display: flex;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container h1{
+        margin-top: 20px;
+    }
+
+    
+</style>
+<body>
+     <div class="container">
+        <h1>QR code Generator</h1>
+        <form action="/submit" method="POST" class="qrForm">
+            <input type="text" id="text" name="text" placeholder="Enter text or URL" required>
+            <input type="submit" value="Generate QR Code" class="btn">
+        </form>
+     </div>
+
+   
+    <script src="server.js"></script>
+</body>
+</html>

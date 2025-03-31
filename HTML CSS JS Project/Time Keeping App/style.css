@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #444; */
+  
+}
+
+body{
+    /* background-image: url(./assets/night.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home
+{
+    margin: 200px;
+}
+
+h1{
+    color: rgb(17, 108, 227);
+}
+
+button{
+    padding: 5px;
+    background-color: violet;
+    color: #f5f5ff;
+    font-weight: bold;
+    border: 2px solid violet;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+h2{
+    color:chartreuse;
+    /* font-style: italic; */
+    font-family: cursive;
+}

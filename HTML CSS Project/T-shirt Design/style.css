@@ -1,0 +1,176 @@
+
+ 
+ .navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 16px;
+   border-radius: 30px;
+    box-shadow: 3px 3px 10px black;
+
+ }
+
+ .navbar button{
+    border-radius: 20px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: greenyellow;
+    
+ }
+
+ .navbar .navlinks a{
+  font-size: 15px;
+  margin-left: 40px;
+  font-weight: bold;
+  position:relative;
+  gap: 10px;
+}
+
+ .navbar h3{
+    margin-left: 10px;
+    padding-right: 190px;
+   color: black;
+ }
+
+
+  
+
+ .home{
+    background-color: greenyellow;
+    text-align: center;
+    height: 400px;
+    margin: 30px ;
+   border-radius: 20px;
+ }
+
+ .home h1{
+   font-size: 40px;
+   /* margin-top: 100px; */
+ }
+
+ .home p{
+   font-size: 20px;
+   /* margin-top: 20px; */
+ }
+
+ .home h4{
+   font-size: 20px;
+   /* margin-top: 30px; */
+ }
+
+ .home button{
+   border-radius: 20px;
+   height: 35px;
+   background-color: black;
+   color: white;
+ }
+
+ button .arrow_icon{
+  font-size: 17px;
+  gap: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  }
+ 
+
+ .features{
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+}
+
+.work-one{
+  background-color: black;
+  border-radius: 20px;
+
+}
+
+.work-one .had{
+  color: white;
+  justify-content: left;
+  padding: 20px;
+}
+.work{
+  display: flex;
+
+   /* margin-left: 200px;
+   margin-right: 200px; */
+  border-radius: 10px;
+  /* width: 100%; */
+  justify-items: center;
+  margin-top: 20px;
+  
+}
+
+ 
+
+.work .unique{
+   background-color: white;
+   margin: 10px;
+   margin-top: 50px;
+    border-radius: 10px;
+}
+
+.work img{
+  /* width: 440px;
+  height: 340px; */
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* .work h3{
+  color: white;
+} */
+
+.work .how{
+  color: white;
+}
+
+.work button{
+  border-radius: 20px ;
+  height: 35px;
+  background-color: greenyellow;
+  color: black;
+  margin: 20px;
+  gap: 20px
+}
+
+.work .about-t-shirt{
+  background-color: white;
+  /* width: 450px;
+  height: 650px; */
+  margin: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.work .unique .btn {
+  background-color: white;
+
+
+}
+
+.work .about-t-shirt .btn {
+  background-color: white;
+}
+
+.work .about-t-shirt .tshirt{
+  margin: 20px;
+}
+
+.work .design{
+   margin: 20px;
+}
+
+.about{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: 100px;
+}
+
+.about .about-key h1{
+  font-size: 30px;
+}

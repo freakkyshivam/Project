@@ -1,0 +1,132 @@
+
+
+.navbar{
+    display: inline-flex;
+    width: 100%;
+}
+
+.container .navbar .logo img{ 
+    height: 80px;
+    width: 80px;
+
+}
+
+ 
+.container .navbar .nav{ 
+    display: flex;
+    margin: 15px;
+    margin-left: 50px;
+    padding-left: 50px;
+    justify-items: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.container .navbar .nav a{
+    color: #444;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.container .navbar .nav a:hover{
+    color:red;
+    
+}
+
+ 
+
+
+.container .navbar .menu{
+    display: flex; 
+    justify-items: flex-end; 
+    align-items: center;
+    margin-left: 100px;
+}
+
+.container .navbar .menu input{
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container .navbar .menu button{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #ff6600;
+    box-shadow: 3px 2px 10px black;
+    color: white;
+    transition: transform 0.2 ease-in-out;
+    border: none;
+    
+}
+
+.container .navbar .menu button:hover{
+    transform: scale(1.1);
+    background-color:  rgb(99, 155, 14);
+}
+
+
+#home{
+    display:inline-flex;
+    /* flex-wrap: wrap; */
+
+}
+
+span{
+    color: red;
+    filter: drop-shadow(3px 3px 10px black);
+}
+
+
+.right-side img{
+ height: 600px;
+ width: 600px;
+ margin-left: 50px;
+ filter: drop-shadow(3px 3px 10px black);
+ transition: transform 0.2s ease-in-out;
+}
+
+.right-side img:hover{
+    transform: scale(1.1);
+}
+
+.left-side{
+    margin: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 50%;
+    height: 50%;
+}
+
+.right-side{
+    width: 50%;
+    height: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+#home .left-side h1{
+    font-size: 4rem;
+}
+
+
+
+#home .left-side button{
+    padding: 10px;
+    background-color:#ff6600;
+    box-shadow: 3px 2px 10px black;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    transition: transform 0.3 ease-in-out;
+    border: none;
+}
+
+#home .left-side button:hover{
+    transform: scale(1.1);
+    background-color: rgb(99, 155, 14);
+}
+
+
+ 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+
+<style>
+.login{
+    height: 100vh;
+    width: 50vh;
+    margin: 20px;
+}
+
+    .lgn{
+        display: flex;
+        
+    }
+
+    .lgn img{
+        margin-left: 100px;
+    }
+
+    .login-text  a{
+        text-decoration: none;
+        color: #ee6600;
+        font-weight: bold; 
+    }
+
+    .login-text hr{
+        border: 1px solid black;
+        border-radius: 50%;
+        
+    }
+
+    .input-phone{
+        display: flex;
+        flex-direction: column;
+         gap: 20px;
+    }
+    .input-phone a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold; 
+    }
+
+    input{
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+
+    button{
+        padding: 20px;
+        background-color: #ee6600;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .input-phone .refferal{
+        color: #5d8ed5;
+    }
+
+</style>
+<body>
+
+    <div class="login">
+
+        <div class="lgn">
+            <div class="login-text">
+                <h2>Sign up</h2>
+                <p>or <a href="./login.html">login to your account</a></p>
+                <hr>
+            </div>
+            <div class="logo">
+                <img src="./assets/login-logo.avif" width="100px">
+            </div>
+        </div>
+            <div class="input-phone">
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Phone Number" required>
+                <input type="text" placeholder="Email" required>
+                <a href="" class="refferal">Have a refferal code?</a>
+               <button>Continue</button>
+                <p>By creating an account, I accept the <a href="">Terms & Conditions</a> & <a href="">Privacy Policy</a></p>
+            </div>
+        
+       
+    </div>
+    
+</body>
+</html>

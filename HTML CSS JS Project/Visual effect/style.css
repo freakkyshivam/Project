@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+ header img{
+  height: 100vh;
+  width: 200vh;
+ }
+
+ .intro-title h2{
+  text-align: center;
+  margin: 20px;
+ }
+
+ .intro-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+/* 
+ .intro-content h2{
+  padding: 50px;
+ }
+
+ .intro-content p{
+  padding: 20px;
+  font-size: 1.2rem;
+ } */
+
+ .intro-text{
+  width: 30%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+ }
+
+ .intro-appear{
+  opacity: 1;
+  transform: translate(0px);
+ }
+
+  

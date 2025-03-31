@@ -1,0 +1,39 @@
+
+body{
+    background: grey;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#weight-guide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+#weight-guide h2{
+    margin-top: 50px;
+}
+
+button{
+    padding: 15px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+}
+
+.results{
+    color: burlywood;
+    font-family: cursive;
+}

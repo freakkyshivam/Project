@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <label for="">BackgroundColor selecter : </label>
+    <input style="border: 2px solid black; border-radius: 30px; margin: 10px;" type="color" id="bg-Color" onchange="changeBackgroundColor()">
+    
+
+    <section class="login">
+        <form action="https://www.instagram.com/accounts/login/?" method="post" accesskey="">
+            <div class="left">
+            <h1>Instagram</h1>
+            <input type="text" placeholder="Phone, Username, or E-mail" class="inputs" required>
+            <input type="password" placeholder="Password" class="inputs" required>
+            <button type="submit"><img src="./assets/arrow_icon.png" alt="">Login</button>
+            </div>
+        </form>
+    </section>
+    
+
+<script>
+    function changeBackgroundColor() {
+        var color = document.getElementById('bg-Color').value;
+        document.body.style.backgroundColor = color;
+        
+    }
+</script>
+
+</body>
+</html>

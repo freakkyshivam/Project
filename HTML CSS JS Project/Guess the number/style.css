@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+}
+
+#canavs{
+    background-color: #414141;
+    text-align: center;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: end;
+    align-items: center;
+}
+#guess-field{
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    transition: 0.2s;
+    box-shadow: 2px 3px 10px black;
+}
+
+#guess-field{
+    transform: scale(1.1);
+}
+
+
+#subt{
+    width: 120px;
+    color: white;
+    padding: 15px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 2px 3px 10px black;
+}
+
+#subt:hover{
+    transform: scale(1.1);
+    background-color: #ee6600;
+}
+
+#newGame{ 
+    width: 200px;
+    color: white;
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 2px 3px 10px black;
+     
+}
+
+#newGame:hover{
+    transform: scale(1.1);
+    background-color: #ee6600;
+}

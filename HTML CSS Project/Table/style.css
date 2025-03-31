@@ -1,0 +1,48 @@
+body{
+    background-color: #414141;
+    color: black;
+   
+    
+}
+
+table{
+    border: 2px solid black;
+    background-color: #ecffecac;
+    border-collapse: collapse;
+    width: 200vh;
+    height: 80vh;
+}
+
+.color{
+    background-color: #fff;
+}
+
+.lec{
+    background-color: #008A8A;
+}
+
+.lecs{
+    background-color: #66f1d1;
+}
+
+.day{
+    background-color: #66f1d1;
+}
+th{
+    border: 2px solid black;
+}
+
+td{
+    border: 2px solid black;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+td:hover{
+    transform: scale(1.01);
+    background-color: red;
+}
+
+ 
