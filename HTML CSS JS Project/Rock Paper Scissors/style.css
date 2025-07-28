@@ -1,0 +1,105 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1d1f21, #2c3e50);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Game Title */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+/* Subtitle */
+h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* Game Button Container */
+#game {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Game Buttons */
+button {
+  font-size: 4rem;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+/* Individual Button Colors */
+#rock {
+  background-color: #e74c3c;
+}
+#paper {
+  background-color: #3498db;
+}
+#scissors {
+  background-color: #27ae60;
+}
+
+/* Score Display */
+h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#your-score {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+#computer-score {
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Result Message */
+#results {
+  font-size: 1.4rem;
+  margin: 10px;
+  font-weight: bold;
+  color: #f1c40f;
+  text-shadow: 0 0 6px #f1c40f;
+}
+
+/* Player Choices Visual */
+#choice {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #aaa;
+  text-align: center;
+}

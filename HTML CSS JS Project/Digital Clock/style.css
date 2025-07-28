@@ -1,28 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #444;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
-.container{
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #00ffcc;
+    font-family: 'Orbitron', sans-serif;
     display: flex;
-    flex-direction: column;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-}
+  }
 
-.container h1{
-    color: rgb(193, 26, 129);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+  .clock {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 80px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #00ffcc88;
+  }
 
-#clock{
-    margin-top: 50px;
-    
-}
+  .time {
+    font-size: 6rem;
+    letter-spacing: 8px;
+    user-select: none;
+  }
 
-h2{
-    color: aliceblue;
-}
+  .am-pm {
+    font-size: 2rem;
+    vertical-align: super;
+    margin-left: 10px;
+  }
+
+  .date {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+
+  .toggle-btn {
+    margin-top: 20px;
+    background: #00ffcc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #003;
+    transition: background 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background: #00ccaa;
+  }

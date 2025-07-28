@@ -12,7 +12,7 @@ const size = allImage[0].clientWidth; // get width of image
 
 imageSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';  // move image
 
-// button listeners
+ 
 nextBtn.addEventListener('click', () => {  // next button
     if (counter >= allImage.length - 1) return; // if counter is greater than or equal to last image return
     imageSlide.style.transition = 'transform 0.4s ease-in-out'; // smooth transition

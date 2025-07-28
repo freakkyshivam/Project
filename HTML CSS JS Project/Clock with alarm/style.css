@@ -1,41 +1,145 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #444;
-    /* color: #f5f5f5; */
-    font-weight: bold;
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+ 
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
 }
 
-#time-bar{
-    display: flex;
-    gap: 10px;
-    color: #ee6600;
+ 
+.container {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-input{
-    padding: 5px 10px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    border: 2px solid #ee6600;
-    margin-top: 50px;
+.brand {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #00f7ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #00f7ff;
+  font-weight: bold;
 }
 
-button{
-    padding: 5px ;
-    background-color: #ee6600;
-    border: 2px solid #ee6600;
-    border-radius: 5px;
+
+ 
+#time {
+  font-size: 3rem;
+  text-align: center;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+  margin-bottom: 30px;
 }
 
-h2{
-    margin-top: 50px;
-    color: #ee6600;
+ 
+.alarm-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
+
+.alarm-controls input[type="time"],
+.alarm-controls input[type="text"] {
+  padding: 12px 15px;
+  border: 2px solid #00f7ff;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.alarm-controls input::placeholder {
+  color: #ccc;
+}
+
+/* Button Styling */
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00f7ff;
+  color: #111;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00d4cc;
+}
+
+/* Alarm List Section */
+#alarm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alarm-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #00f7ff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.alarm-info strong {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.alarm-info span {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.alarm-buttons button {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background: #00f7ff;
+  color: #000;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.alarm-buttons button:hover {
+  background: #00d4cc;
+}
+
+
+.stop-btn, .snooze-btn {
+ display: none;
+}
+
+
