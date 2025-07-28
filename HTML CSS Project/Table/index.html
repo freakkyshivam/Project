@@ -8,9 +8,9 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container" id="my-table">
 
-        <table>
+        <!-- <table>
 
             <tr>
                 <th class="lec">Day/lecture</th>
@@ -96,10 +96,86 @@
                 <td>------</td>
                 <td>------</td>
             </tr>
+        </table> -->
+
+        <h2> Comparison of Common Features</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Spotify</th>
+              <th>Apple Music</th>
+              <th>YouTube Music</th>
+              <th>Amazon Music</th>
+              <th>Deezer</th>
+              <th>Tidal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Play, Pause, Next/Previous</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>Shuffle & Repeat</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>Playlist Creation & Mgmt</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>Search (Song/Artist/Album)</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>Offline Playback</td><td>Yes (Premium)</td><td>Yes</td><td>Yes (Premium)</td><td>Yes (HD/UHD)</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>Lyrics Display</td><td>Yes (Genius)</td><td>Yes (Real-time)</td><td>Yes (Genius)</td><td>Limited/None</td><td>Yes (Synced)</td><td>Limited</td></tr>
+            <tr><td>Equalizer</td><td>Yes (mobile)</td><td>Yes (built-in)</td><td>Yes (Android)</td><td>Not prominent</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>Crossfade Playback</td><td>Yes</td><td>Not available</td><td>Not available</td><td>Not available</td><td>Not available</td><td>Not available</td></tr>
+            <tr><td>Social Sharing</td><td>Yes</td><td>Limited</td><td>YouTube Sharing</td><td>Alexa Sharing</td><td>Sharing only</td><td>Sharing only</td></tr>
+            <tr><td>Voice Integration</td><td>External</td><td>Siri</td><td>Google</td><td>Alexa</td><td>Not native</td><td>Not native</td></tr>
+            <tr><td>High Quality Audio</td><td>Not provided</td><td>Lossless</td><td>Not provided</td><td>HD/UHD</td><td>Not core</td><td>Master</td></tr>
+            <tr><td>Podcast Integration</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td></tr>
+            <tr><td>Customizable UI Themes</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+          </tbody>
         </table>
+
+
+
+        <h2> Proposed/Missing Features Comparison</h2>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Proposed Feature</th>
+      <th>Spotify</th>
+      <th>Apple Music</th>
+      <th>YouTube Music</th>
+      <th>Amazon Music</th>
+      <th>Deezer</th>
+      <th>Tidal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Mood-based/AI Playlists</td><td>Partial</td><td>Partial</td><td>Partial</td><td>Partial</td><td>Partial</td><td>Partial</td></tr>
+    <tr><td>Collaborative Real-time Playlists</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Advanced Gesture Controls</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Customizable UI Themes</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Dynamic Lyrics Translation</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>Audio Enhancements for Headphones</td><td>No</td><td>Could improve</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+    <tr><td>VR/AR Integration</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+  </tbody>
+</table>
+
+
+
+  <!-- <button onclick="generatePDF()">Download PDF</button> -->
+
+
+
+
+
+
     </div>
 
     
-    
+    <script>
+        function generatePDF() {
+          const { jsPDF } = window.jspdf;
+          const doc = new jsPDF();
+          doc.autoTable({ html: '#my-table' });
+          doc.save('table.pdf');
+        }
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+      
 </body>
 </html>

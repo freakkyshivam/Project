@@ -1,0 +1,91 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+     /* text-align: center; */
+  }
+  
+
+  #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: aliceblue;
+    background-color: rgb(255, 187, 0);
+    /* background-color: #444; */
+    gap: 25px;
+    height: 100vh;
+  }
+
+  .box{
+   
+    border-radius: 10px;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
+    box-shadow: 0 0 10px red;
+  }
+
+  .box:nth-child(1){
+    background-image: url(https://www.befunky.com/images/prismic/1f427434-7ca0-46b2-b5d1-7d31843859b6_funky-focus-red-flower-field-after.jpeg?auto=avif,webp&format=jpg&width=863);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box:nth-child(2){
+    background-image: url(./img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box:nth-child(3){
+    background-image: url(https://www.befunky.com/images/prismic/1f427434-7ca0-46b2-b5d1-7d31843859b6_funky-focus-red-flower-field-after.jpeg?auto=avif,webp&format=jpg&width=863);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box:hover{
+    transform: scale(1.05);
+    /* box-shadow: 0 0 10px rgba(247, 124, 2, 0.7); */
+     box-shadow: 0 0 10px black;
+  }
+
+  
+
+  strong{
+    color: rgb(237, 160, 8);
+  }
+
+  .info{
+    /* margin-top: 20px;
+    margin-left: 20px; */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .author{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+.author img{
+  margin-top: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+ 
+
+  
+
